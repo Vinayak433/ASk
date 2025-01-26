@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be My Valentine</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #ffcccb;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      color: white;
+      background-color: #f54291;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    #no-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const noBtn = document.getElementById("no-btn");
+      noBtn.addEventListener("mouseover", () => {
+        noBtn.style.top = Math.random() * 80 + "vh";
+        noBtn.style.left = Math.random() * 80 + "vw";
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>Will You Be My Valentine?</h1>
+  <img src="https://media.giphy.com/media/3o7TKUMdShVa3nYrDi/giphy.gif" alt="Cute GIF" width="200">
+  <br>
+  <a id="no-btn" class="btn" href="no1.html">No</a>
+  <a class="btn" href="yes.html">Yes</a>
+</body>
+</html>
